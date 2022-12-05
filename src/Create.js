@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function Create() {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
-  const [author, setAuthor] = useState("vivek");
+  const [author, setAuthor] = useState("");
   const [isPending, setIsPending] = useState(false);
   const navigate = useNavigate();
 
@@ -55,7 +55,6 @@ function Create() {
         />
         <label>Blog Body:</label>
         <textarea value={body} onChange={handleBodyChange} required></textarea>
-        <label>Blog Author:</label>
         <label>Blog Author:</label>
         <input
           type="text"
