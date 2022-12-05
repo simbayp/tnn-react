@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "What is Git?",
+      "body": "Most developers or beginners might have heard the term Git or GitHub in their learning phase. The git website itself mentions that it is 'a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency'.\nLet's understand what the term 'version control system' means. In the lifecycle of software development, many people contribute to its codebase or sometimes the same person can contribute many times. So a natural question arises, how does everyone know who contributed which part in the code or what new changes have been made recently? This is called versioning of source code. So now the phrase 'version control system' starts to make sense.",
+      "author": "vivek",
+      "id": 1
+    },
+    {
+      "title": "JavaScript Window and Document Object",
+      "body": "First Things First: The DOM\nThe document is an object model of any HTML web page that is run in a browser application. Individual elements of an HTML page can be accessed through the document object model. Document objects are used to add dynamic content to a web page.\nMany times we must have thought that what exactly is the difference between Document and Window object in JavaScript. In this blog I will try to explain the difference between them from the perspective of a newbie developer. Let's see the window object first.\nWindow Object:\nThe window object is the global object of any document object model. It is the first thing that gets loaded into the browser. This window object has many properties like length, name, innerWidth, innerHeight, outerWidth, outerHeight, console etc. The window object is initialized as soon as that window appears on the viewport of a device. All children of window object can be accessed by using window.childName or just by childName since window is the global object of browsers.\nDocument Object:\nThe document object is a child of the window object. It can be accessed with window.document or just by document. The document object serves as an entry point into any web page's content. Document object also has many properties like activeElement, cookie, doctype, body, head etc. The DOM is contained inside the document object. This document object is initialized when the HTML file is parsed by the browser.",
+      "author": "vivek",
+      "id": 2
+    }
+  ]
+}
