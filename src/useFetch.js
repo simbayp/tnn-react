@@ -6,10 +6,11 @@ const useFetch = (url) => {
   const [errorOutput, setErrorOutput] = useState(null); // so that we could output it to the browser
 
   useEffect(() => {
-    const abortCont = new AbortController();
+    const controller = new AbortController();
+    const signal = controller.signal;
 
     setTimeout(() => {
-      fetch(url, { signal: abortCont.signal })
+      fetch(url, { signal })
         .then((res) => {
           if (!res.ok) {
             throw Error("Could not find data for this resource");
@@ -31,7 +32,7 @@ const useFetch = (url) => {
         });
     }, 1000); // 1 sec deliberate delay to mock a real server delay
 
-    return () => abortCont.abort();
+    return () => controller.abort();
   }, [url]);
 
   return { data, isPending, errorOutput }; // return all the states because that's what we want to use in Home.js file under useFetch() custom hook
