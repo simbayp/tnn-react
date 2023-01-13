@@ -30,7 +30,8 @@ function Create() {
     setIsPending(true);
 
     setTimeout(() => {
-      fetch("http://localhost:8000/blogs", {
+      // For production
+      fetch("https://my-json-server.typicode.com/simbayp/tnn-react/blogs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(blog),

@@ -6,7 +6,7 @@ function Home() {
     data: blogs,
     isPending,
     errorOutput,
-  } = useFetch("http://localhost:8000/blogs");
+  } = useFetch("https://my-json-server.typicode.com/simbayp/tnn-react/blogs"); // For production
 
   return (
     <div className="Home">

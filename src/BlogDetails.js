@@ -11,9 +11,13 @@ function BlogDetails() {
   const navigate = useNavigate();
 
   function handleClick() {
-    fetch(`http://localhost:8000/blogs/${blog.id}`, {
-      method: "DELETE",
-    }).then(() => {
+    // For production
+    fetch(
+      `https://my-json-server.typicode.com/simbayp/tnn-react/blogs/${blog.id}`,
+      {
+        method: "DELETE",
+      }
+    ).then(() => {
       navigate("/");
     });
   }
