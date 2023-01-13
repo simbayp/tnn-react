@@ -7,7 +7,9 @@ function BlogDetails() {
     data: blog,
     isPending,
     errorOutput,
-  } = useFetch(`http://localhost:8000/blogs/${id}`);
+  } = useFetch(
+    `https://my-json-server.typicode.com/simbayp/tnn-react/blogs/${id}` // For production
+  );
   const navigate = useNavigate();
 
   function handleClick() {
