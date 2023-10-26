@@ -7,16 +7,22 @@
       "id": 1
     },
     {
+      "title": "Understanding Objects and Their Internal Representation in JavaScript",
+      "body": "JavaScript is a versatile and widely-used programming language that allows developers to create dynamic and interactive web applications. At the heart of JavaScript lies the concept of objects, which are fundamental to the language's structure. In this blog, we'll explore what objects are in JavaScript and how they are internally represented.\nWhat Are Objects in JavaScript?\nIn JavaScript, an object is a complex data type that can store and organize multiple values and functions. Objects are collections of key-value pairs, where each key (also known as a property) is associated with a value (either a data value or a function), creating a structure that allows for organizing, storing, and manipulating data efficiently.\nObjects are incredibly versatile and can represent a wide range of real-world entities. For example, you can use objects to model a person with properties like name, age, and gender, or you can create an object to represent a product with properties like name, price, and description.\nInternal Representation of Objects\nTo understand how objects are internally represented in JavaScript, it's essential to know that objects are not limited to one specific structure. The language itself provides flexibility, allowing you to create objects in different ways. The internal representation may vary, but we'll discuss the general principles here.",
+      "author": "vivek",
+      "id": 2
+    },
+    {
       "title": "JavaScript Window and Document Object",
       "body": "First Things First: The DOM\nThe document is an object model of any HTML web page that is run in a browser application. Individual elements of an HTML page can be accessed through the document object model. Document objects are used to add dynamic content to a web page.\nMany times we must have thought that what exactly is the difference between Document and Window object in JavaScript. In this blog I will try to explain the difference between them from the perspective of a newbie developer. Let's see the window object first.\nWindow Object:\nThe window object is the global object of any document object model. It is the first thing that gets loaded into the browser. This window object has many properties like length, name, innerWidth, innerHeight, outerWidth, outerHeight, console etc. The window object is initialized as soon as that window appears on the viewport of a device. All children of window object can be accessed by using window.childName or just by childName since window is the global object of browsers.\nDocument Object:\nThe document object is a child of the window object. It can be accessed with window.document or just by document. The document object serves as an entry point into any web page's content. Document object also has many properties like activeElement, cookie, doctype, body, head etc. The DOM is contained inside the document object. This document object is initialized when the HTML file is parsed by the browser.",
       "author": "vivek",
-      "id": 2
+      "id": 3
     },
     {
       "title": "What is Git?",
       "body": "Most developers or beginners might have heard the term Git or GitHub in their learning phase. The git website itself mentions that it is 'a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency'.\nLet's understand what the term 'version control system' means. In the lifecycle of software development, many people contribute to its codebase or sometimes the same person can contribute many times. So a natural question arises, how does everyone know who contributed which part in the code or what new changes have been made recently? This is called versioning of source code. So now the phrase 'version control system' starts to make sense.",
       "author": "vivek",
-      "id": 3
+      "id": 4
     }
   ]
 }
